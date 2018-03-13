@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="mystyle.css" type="text/css"/>
+		<link href="https://fonts.googleapis.com/css?family=Philosopher" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Courgette|Philosopher" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	</head>
+
+	<body>
+		<div class="header" >
+			Medica 
+		</div>
+			
+				<div class="icons" style="width:830px; height:120px;">
+					<div class="image1" style="width: 2000px; height: 90px; margin: 111px 0px 0px 110px;">
+						<a href=" app form.html " target="_self">
+							<img class="img" src="../se project/picture4.png" width = "166px"; height= "166px"  alt="sorry" align="left" /> 
+						</a>
+						
+					
+					
+						<a href=" dr details.html" target="_self">
+							<img id="img1" src="../se project/picture7.png" width = "166px"; height= "166px"  alt="sorry" style="margin: 0px 0px 0px 710px;"/> 
+						</a>
+					</div>
+					
+					
+					
+					<div style="width: 2000px; height: 90px; margin: 45px 0px 0px 110px;">
+					
+						<div class="login">
+							<a href="login.html" target="_self" style="color: white; text-decoration: none; margin-left: 25px;" > Login </a><br>
+						&nbsp OR <a href="register.html" target="_self" style="color: white; text-decoration: none;" ><br> Register </a>
+						</div>
+					
+					
+					
+						<a href=" https://www.google.co.in " target="_self">
+							<img id="img2" src="../se project/picture10.png" width = "166px"; height= "166px"  alt="sorry" align="left" style="margin-top: -119px; margin-left: 17px;" /> 
+						</a>
+					
+					
+						<a href=" payments.html " target="_self">
+							<img id="img3" src="../se project/picture10.png" width = "166px"; height= "166px"  alt="sorry" style="margin: 0px 0px 0px 710px ; margin-top: -119px;"/>
+						</a>
+					</div>
+				</div>
+				
+				
+	</body>
+	<script type="text/javascript">
+		var img = "../se project/picture4.png";
+		var imgHover = "../se project/picture4_1.png";
+		
+		var img1 = "../se project/picture7.png";
+		var imgHover1 = "../se project/picture8.png";
+		
+		var img2 = "../se project/picture5.png";
+		var imgHover2 = "../se project/picture9.png";
+		
+		var img3 = "../se project/picture6.png";
+		var imgHover3 = "../se project/picture10.png";
+		
+		
+		$("#img").hover(f1("#img", imgHover),  f1("#img", img));
+		$("#img1").hover(f1("#img1", imgHover1),  f1("#img1", img1));
+		$("#img2").hover(f1("#img2", imgHover2),  f1("#img2", img2));
+		$("#img3").hover(f1("#img3", imgHover3),  f1("#img3", img3));
+		
+		
+		function f1(id, i){
+		
+			$(id).attr('src',i);
+			
+		}
+		
+	</script>
+</html>

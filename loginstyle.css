@@ -1,0 +1,58 @@
+
+
+ 
+ 
+ 
+ .style{
+	     margin-top: 52px;
+ }
+ 
+ .head {
+	 background-image: url("../se project/register6.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    float: right;
+    margin-right: 377px;
+    margin-top: -32px;
+ }
+ .submit1{
+	margin: 4px 0px 0px -4px;
+	padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    
+	margin-top: 20px;
+	background-color: #0067a4;
+    color: white;
+    border-radius: 4px;
+	padding-right: 66px;
+	border:none;
+	display: inline-block;
+	    padding-right: 10px;
+}
+
+.submit2{
+	margin: 4px 0px 0px 20px;
+	padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+	margin-top: 20px;
+	background-color: #0067a4;
+    color: white;
+    border-radius: 4px;
+	padding-right: 66px;
+	border:none;
+	display: inline-block;
+	padding-right: 10px;
+}
+
+
+.submit1:hover{
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.submit2:hover{
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}

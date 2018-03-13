@@ -1,0 +1,91 @@
+<html>
+<head>
+<title>Payment Details</title>
+<link rel="stylesheet" href="payment.css" type="text/css"/>
+<script type="text/javascript" language="javascript">
+
+ function validate_form ( )
+
+{
+	valid = true;
+	if ( document.form.Name.value == "" )
+	{
+	alert ( "Please Enter Your Name" );
+	valid = false;
+	}
+	if ( document.form.A.value == "" )
+	{
+	alert ( "Please Enter Your Amount" );
+	valid = false;
+	}
+	if ( ( document.form.r[0].checked == false ) && 
+( document.form.r[1].checked == false )&&(document.form.r[2].checked==false) )
+	{
+	alert ( "Please choose your Payment Process" );
+	valid = false;
+	}
+	
+	return valid;
+}
+  
+</script>
+
+
+</head>
+<body id="back">
+<center>
+<form name="form" method="post" onSubmit="return validate_form();" style="margin-top: 72px; width: 382px; font-size: 37px; margin-left: -133px;">
+<fieldset style="border: outset;">
+<legend> Payments </legend>
+<table>
+<tr >
+	<td><b>Patient Name:</b></td>
+	<td>&nbsp;&nbsp;<input type="text" name="Name" size="20" style="padding-top: 5px;"></td>
+</tr>
+<tr>
+	<td><b>Paying Amount:</b></td>
+	<td>&nbsp;&nbsp;<input type="text" name="A" size="20" style="padding-top: 5px;"></td>
+</tr>
+<tr>
+	<td><b>Bank Details:</b></td>
+	<td>
+	<select name="Bank" style="margin-left: 8px; padding-right: 28px; padding-top: 5px;">
+	<option>Bank of Maharashtra</option>
+	<option>State Bank of India</option>
+	<option>Canara Bank</option>
+	<option>Bank of India</option>
+	</select>
+	</td>
+</tr>
+<tr>
+	<td><b>Bank Branch:</b></td>
+	<td>
+	<select name="Branch" style="margin-left: 8px; padding-right: 105px; padding-top: 5px;">
+	<option>Vasai</option>
+	<option>Virar</option>
+	<option>Palghar</option>
+	</select>
+	</td>
+</tr>
+<tr>
+	<td><b>Payment Process:</b></td>
+	<td><input type="radio" name="r" value="CS" style="padding-top: 5px;">Cash</td>
+</tr>
+<tr>
+	<td>&nbsp;</td>
+	<td><input type="radio" name="r" value="DE" style="padding-top: 5px;">Debit</td>
+</tr>
+<tr>
+	<td>&nbsp;</td>
+	<td><input type="radio" name="r" value="CC" style="padding-top: 5px;">Credit Cards</td>
+</tr>
+<tr>
+	<td><input type="Submit" name="Send" value="Submit" class="button1"></td>
+	<td><input type="Reset" name="Clear" value="Reset" class="button1"></td>
+</tr>
+</table>
+</center>
+</fieldset>
+</form>
+</body>
+</html>
